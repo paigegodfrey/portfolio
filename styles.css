@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-brand, .nav-link {
+  color: white;
+}
+/* 
+.bg-cover, #contact {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
+}
+
+.bg-cover {
+  background-image: url("img/fabian-grohs-dMUt0X3f59Q-unsplash.jpg");
+}
+
+#contact {
+  background-image: url("img/daniel-von-appen-ZddDUb6_lY8-unsplash.jpg");
+}
+
+#contact a {
+  text-decoration: none;
+  color: inherit;
+} */
