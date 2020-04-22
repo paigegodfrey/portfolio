@@ -19,7 +19,11 @@ body {
   color: inherit;
 }
 
-.btn {
+form .btn {
   position: absolute;
   right: 12px;
+}
+
+.card {
+  min-height: 400px;
 }
