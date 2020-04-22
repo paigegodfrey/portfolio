@@ -9,6 +9,15 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
@@ -42,40 +51,75 @@
       <h2 class="font-weight-normal">Recent Work</h2>
       <hr>
 
-
       <div class="projects row">
-        <div class="col-xl-4">
+        <div class="col-lg-6">
           <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
             <img class="card-img-top" src="jobly.jpg" alt="jobly-screenshot">
             <div class="card-body">
               <h3 class="card-title">Jobly</h3>
+              <a href="https://github.com/paigegodfrey/jobly" target="_blank"><i class="fab fa-github fa-lg mx-1"></i></a>
               <p class="card-text mb-0">This theme will look great on any device, no matter the size!</p>
-              <div class="details btn btn-primary mt-4 float-right">View details</div>
+              <div class="details btn btn-outline-primary mt-4" data-toggle="modal" data-target="#joblyModal">
+                More details
+              </div>
+              <div class="details btn btn-primary mt-4 float-right">
+                Open app
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xl-4">
+        <!-- Modal -->
+        <div class="modal fade" id="joblyModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Jobly</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
           <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
             <img class="card-img-top" src="jobly.jpg" alt="jobly-screenshot">
             <div class="card-body">
               <h3 class="card-title">Microblog</h3>
+              <a href="https://github.com/paigegodfrey/microblog" target="_blank"><i class="fab fa-github fa-lg mx-1"></i></a>
               <p class="card-text mb-0">This theme will look great on any device, no matter the size!</p>
-              <div class="details btn btn-primary mt-4 float-right">View details</div>
+              <div class="details btn btn-outline-primary mt-4" data-toggle="modal" data-target="#microblogModal">
+                More details
+              </div>
+              <div class="details btn btn-primary mt-4 float-right">
+                Open app
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xl-4">
-          <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <img class="card-img-top" src="jobly.jpg" alt="jobly-screenshot">
-            <div class="card-body">
-              <h3 class="card-title">Warbler</h3>
-              <p class="card-text mb-0">This theme will look great on any device, no matter the size!</p>
-              <div class="details btn btn-primary mt-4 float-right">View details</div>
+        <!-- Modal -->
+        <div class="modal fade" id="microblogModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Microblog</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
             </div>
           </div>
         </div>
+
+
+
       </div>
     </div>
   </div>

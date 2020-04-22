@@ -27,3 +27,13 @@ form .btn {
 .card {
   min-height: 400px;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.card-title {
+  display: inline-block;
+}
