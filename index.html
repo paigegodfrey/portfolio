@@ -38,7 +38,7 @@
   <!-- End Navigation -->
 
   <!-- Main -->
-  <div class="p-2 pt-4 bg-light">
+  <div class="p-2 pt-4 bg-light" style="min-height: 90vh;">
     <div class="col-md-9 mx-auto my-5">
 
       <!-- Header -->
@@ -94,8 +94,8 @@
                 <p>
                   Jobly is a mock app in which users can view companies/job postings and apply 
                   to open positions. The app features a user login interface that uses JSON web token 
-                  authentication. The frontend is built with React and styled with Bootstrap, while 
-                  the backend is built with Node/Express and uses a PostgreSQL database.
+                  authentication. The frontend is built with React and styled with Bootstrap, and the 
+                  backend runs on Node/Express and uses a PostgreSQL database.
                 </p>
                 <p>
                   Live demo: <a href="https://jobly-react-app.herokuapp.com/" target="_blank">https://jobly-react-app.herokuapp.com</a>
@@ -126,9 +126,11 @@
               <div class="details btn btn-outline-primary mt-4" data-toggle="modal" data-target="#microblogModal">
                 More details
               </div>
-              <div class="details btn btn-primary mt-4 float-right">
-                Open app
-              </div>
+              <a href="https://microblog-react-app.herokuapp.com/" target="_blank">
+                <div class="details btn btn-primary mt-4 float-right">
+                  Open app
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -143,16 +145,16 @@
               </div>
               <div class="modal-body">
                 <p>
-                  Microblog is a simple app in which users can create/modify blog posts and leave comments.
+                  Microblog is a simple app that allows users to create/modify blog posts and add/delete comments.
                   The app uses Redux and Redux Thunk to manage state, handle prop-drilling, and dispatch 
                   actions asynchronously.
                 </p>
                 <p>
-                  The frontend is built with React and styled with Bootstrap, while the backend is built 
-                  with Node/Express and uses a PostgreSQL database.
+                  The frontend is built with React and styled with Bootstrap, and the backend runs on 
+                  Node/Express and uses a PostgreSQL database.
                 </p>
                 <p>
-                  Live demo: <a href="#" target="_blank">[heroku link]</a>
+                  Live demo: <a href="https://microblog-react-app.herokuapp.com/" target="_blank">https://microblog-react-app.herokuapp.com</a>
                 </p>
                 <div class="embed-responsive embed-responsive-4by3">
                   <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop"><source src="microblog-record.mp4" /></video>
