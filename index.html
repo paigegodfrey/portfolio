@@ -24,8 +24,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="page-top">
+<body>
 
+  <!-- Navigation -->
   <nav class="navbar navbar-expand">
     <a class="navbar-brand mx-1" href="index.html">PAIGE</a>
     <ul class="navbar-nav ml-auto">
@@ -34,25 +35,33 @@
       <li class="nav-item mx-1"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
   </nav>
+  <!-- End Navigation -->
 
+  <!-- Main -->
   <div class="p-2 pt-4 bg-light">
     <div class="col-md-9 mx-auto my-5">
+
+      <!-- Header -->
       <div>
         <h1 class="display-4 font-weight-normal">Paige Godfrey</h1>
         <p class="lead font-weight-normal mb-2">Full-stack developer based in San Francisco,
           California.</p>
         <div class="mb-5">
-          <a href="#" target="_blank"><i class="fa fa-envelope fa-lg mx-1"></i></a>
+          <a href="contact.html"><i class="fa fa-envelope fa-lg mx-1"></i></a>
           <a href="https://www.linkedin.com/in/paigegodfrey/" target="_blank"><i
               class="fab fa-linkedin fa-lg mx-1"></i></a>
           <a href="https://github.com/paigegodfrey" target="_blank"><i class="fab fa-github fa-lg mx-1"></i></a>
           <a href="#" target="_blank"><i class="fas fa-file-download fa-lg mx-1"></i></a>
         </div>
       </div>
+      <!-- End Header -->
+
+      <!-- Projects -->
       <h2 class="font-weight-normal">Recent Work</h2>
       <hr>
-
       <div class="projects row">
+
+        <!-- Jobly -->
         <div class="col-lg-6">
           <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
             <img class="card-img-top" src="jobly.jpg" alt="jobly-screenshot">
@@ -60,7 +69,7 @@
               <h3 class="card-title">Jobly</h3>
               <a href="https://github.com/paigegodfrey/jobly" target="_blank"><i
                   class="fab fa-github fa-lg mx-1"></i></a>
-              <p class="card-text mb-0">This theme will look great on any device, no matter the size!</p>
+              <p class="card-text mb-0">React • Node/Express • PostgreSQL</p>
               <div class="details btn btn-outline-primary mt-4" data-toggle="modal" data-target="#joblyModal">
                 More details
               </div>
@@ -73,31 +82,51 @@
           </div>
         </div>
 
-        <!-- Modal -->
+        <!-- Jobly Modal -->
         <div class="modal fade" id="joblyModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- Modal content-->
+          <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title">Jobly</h4>
+                <h2 class="modal-title">Jobly</h2>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               <div class="modal-body">
-                <p>Some text in the modal.</p>
+                <p>
+                  Jobly is a mock app in which users can view companies/job postings and apply 
+                  to open positions. The app features a user login interface that uses JSON web token 
+                  authentication. The frontend is built with React and styled with Bootstrap, while 
+                  the backend is built with Node/Express and uses a PostgreSQL database.
+                </p>
+                <p>
+                  Live demo: <a href="https://jobly-react-app.herokuapp.com/" target="_blank">https://jobly-react-app.herokuapp.com</a>
+                </p>
+                <p>Create a new account or login using the following information:</p>
+                <ul>
+                  <li>Username: test</li>
+                  <li>Password: password</li>
+                </ul>
+                <div class="embed-responsive embed-responsive-4by3">
+                  <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop"><source src="screen-record.mp4" /></video>
+              </div>
+                <!-- <video class="tab" height="inhert" width="auto">
+                  <source src="screen-record.mp4"/>
+                </video> -->
               </div>
             </div>
           </div>
         </div>
+        <!-- End Jobly -->
 
+        <!-- Microblog -->
         <div class="col-lg-6">
           <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <img class="card-img-top" src="bookstore.jpg" alt="bookstore-screenshot">
+            <img class="card-img-top" src="microblog.jpg" alt="microblog-screenshot">
             <div class="card-body">
-              <h3 class="card-title">Bookstore</h3>
-              <a href="https://github.com/paigegodfrey/bookstore" target="_blank"><i
+              <h3 class="card-title">Microblog</h3>
+              <a href="https://github.com/paigegodfrey/microblog" target="_blank"><i
                   class="fab fa-github fa-lg mx-1"></i></a>
-              <p class="card-text mb-0">This theme will look great on any device, no matter the size!</p>
-              <div class="details btn btn-outline-primary mt-4" data-toggle="modal" data-target="#bookstoreModal">
+              <p class="card-text mb-0">React • Redux • Node/Express</p>
+              <div class="details btn btn-outline-primary mt-4" data-toggle="modal" data-target="#microblogModal">
                 More details
               </div>
               <div class="details btn btn-primary mt-4 float-right">
@@ -107,21 +136,32 @@
           </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="bookstoreModal" role="dialog">
-          <div class="modal-dialog">
-            <!-- Modal content-->
+        <!-- Microblog Modal -->
+        <div class="modal fade" id="microblogModal" role="dialog">
+          <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title">Bookstore</h4>
+                <h4 class="modal-title">Microblog</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               <div class="modal-body">
-                <p>Some text in the modal.</p>
+                <p>
+                  Microblog is a simple app in which users can create/modify blog posts and leave comments.
+                  The app uses Redux and Redux Thunk to manage state, handle prop-drilling, and dispatch 
+                  actions asynchronously.
+                </p>
+                <p>
+                  The frontend is built with React and styled with Bootstrap, while the backend is built 
+                  with Node/Express and uses a PostgreSQL database.
+                </p>
+                <p>
+                  Live demo: <a href="#" target="_blank">[heroku link]</a>
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <!-- End Microblog -->
 
       </div>
     </div>
