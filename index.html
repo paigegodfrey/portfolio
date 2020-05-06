@@ -51,7 +51,8 @@
           <a href="https://www.linkedin.com/in/paigegodfrey/" target="_blank"><i
               class="fab fa-linkedin fa-lg mx-1"></i></a>
           <a href="https://github.com/paigegodfrey" target="_blank"><i class="fab fa-github fa-lg mx-1"></i></a>
-          <a href="Paige_Godfrey_Resume_2020_v1.2.pdf" target="_blank"><i class="fas fa-file-download fa-lg mx-1"></i></a>
+          <a href="Paige_Godfrey_Resume_2020_v1.2.pdf" target="_blank"><i
+              class="fas fa-file-download fa-lg mx-1"></i></a>
         </div>
       </div>
       <!-- End Header -->
@@ -62,7 +63,7 @@
       <div class="projects row">
 
         <!-- Jobly -->
-        <div class="col-lg-6">
+        <div class="col-xl-4">
           <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
             <img class="card-img-top" src="jobly.jpg" alt="jobly-screenshot">
             <div class="card-body">
@@ -92,13 +93,14 @@
               </div>
               <div class="modal-body">
                 <p>
-                  Jobly is a mock app in which users can view companies/job postings and apply 
-                  to open positions. The app features a user login interface that uses JSON web token 
-                  authentication. The frontend is built with React and styled with Bootstrap, and the 
+                  Jobly is a mock app in which users can view companies/job postings and apply
+                  to open positions. The app features a user login interface that uses JSON web token
+                  authentication. The frontend is built with React and styled with Bootstrap, and the
                   backend runs on Node/Express and uses a PostgreSQL database.
                 </p>
                 <p>
-                  Live demo: <a href="https://jobly-react-app.herokuapp.com/" target="_blank">https://jobly-react-app.herokuapp.com</a>
+                  Live demo: <a href="https://jobly-react-app.herokuapp.com/"
+                    target="_blank">https://jobly-react-app.herokuapp.com</a>
                 </p>
                 <p>Create a new account or login using the following information:</p>
                 <ul>
@@ -106,7 +108,8 @@
                   <li>Password: password</li>
                 </ul>
                 <div class="embed-responsive embed-responsive-4by3">
-                  <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop"><source src="jobly-record.mp4" /></video>
+                  <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="jobly-record.mp4" /></video>
                 </div>
               </div>
             </div>
@@ -115,7 +118,7 @@
         <!-- End Jobly -->
 
         <!-- Microblog -->
-        <div class="col-lg-6">
+        <div class="col-xl-4">
           <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
             <img class="card-img-top" src="microblog.jpg" alt="microblog-screenshot">
             <div class="card-body">
@@ -146,24 +149,81 @@
               <div class="modal-body">
                 <p>
                   Microblog is a simple app that allows users to create/modify blog posts and add/delete comments.
-                  The app uses Redux and Redux Thunk to manage state, handle prop-drilling, and dispatch 
+                  The app uses Redux and Redux Thunk to manage state, handle prop-drilling, and dispatch
                   actions asynchronously.
                 </p>
                 <p>
-                  The frontend is built with React and styled with Bootstrap, and the backend runs on 
+                  The frontend is built with React and styled with Bootstrap, and the backend runs on
                   Node/Express and uses a PostgreSQL database.
                 </p>
                 <p>
-                  Live demo: <a href="https://microblog-react-app.herokuapp.com/" target="_blank">https://microblog-react-app.herokuapp.com</a>
+                  Live demo: <a href="https://microblog-react-app.herokuapp.com/"
+                    target="_blank">https://microblog-react-app.herokuapp.com</a>
                 </p>
                 <div class="embed-responsive embed-responsive-4by3">
-                  <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop"><source src="microblog-record.mp4" /></video>
+                  <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="microblog-record.mp4" /></video>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- End Microblog -->
+
+        <!-- Warbler -->
+        <div class="col-xl-4">
+          <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <img class="card-img-top" src="warbler.jpg" alt="warbler-screenshot">
+            <div class="card-body">
+              <h3 class="card-title">Warbler</h3>
+              <a href="https://github.com/paigegodfrey/warbler" target="_blank"><i
+                  class="fab fa-github fa-lg mx-1"></i></a>
+              <p class="card-text mb-0">Flask • Jinja • PostgreSQL</p>
+              <div class="details btn btn-outline-primary mt-4" data-toggle="modal" data-target="#warblerModal">
+                More details
+              </div>
+              <a href="https://warbler-flask-app.herokuapp.com/" target="_blank">
+                <div class="details btn btn-primary mt-4 float-right">
+                  Open app
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warbler Modal -->
+        <div class="modal fade" id="warblerModal" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Warbler</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Warbler is...
+                </p>
+                <p>
+                  ...
+                </p>
+                <p>Create a new account or login using the following information:</p>
+                <ul>
+                  <li>Username: user</li>
+                  <li>Password: password</li>
+                </ul>
+                <p>
+                  Live demo: <a href="https://warbler-flask-app.herokuapp.com/"
+                    target="_blank">https://warbler-flask-app.herokuapp.com</a>
+                </p>
+                <!-- <div class="embed-responsive embed-responsive-4by3">
+                  <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="warbler-record.mp4" /></video>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Warbler -->
 
       </div>
     </div>
