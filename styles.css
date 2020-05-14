@@ -37,6 +37,10 @@ form .btn {
   display: inline-block;
 }
 
+.card-text {
+  height: 100px;
+}
+
 .details {
   position: absolute;
   bottom: 20px;
