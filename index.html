@@ -93,10 +93,12 @@
               </div>
               <div class="modal-body">
                 <p>
-                  Jobly is a full-stack mock job-search application in which users can view companies/job postings
-                  and apply to open positions. The app features a user login interface that uses JSON
-                  web token authentication. The frontend is built with React and styled with Bootstrap,
-                  and the backend runs on Node/Express and uses a PostgreSQL database.
+                  Jobly is a full-stack mock job-search application in which users can login, view companies/jobs,
+                  and apply to open positions. Global state is managed with React Context and the backend features
+                  a RESTful API with token-based authentication. Integration tests were written with Jest and SuperTest.
+                </p>
+                <p>
+                  Utilized: React, React Context, Node, Express, JSON Schema, JSON Web Tokens, Bcrypt, Jest, SuperTest, PostgreSQL.
                 </p>
                 <p>
                   Live demo: <a href="https://jobly-react-app.herokuapp.com/"
@@ -148,12 +150,12 @@
               </div>
               <div class="modal-body">
                 <p>
-                  Microblog is a full-stack blogging application that allows users to create blog posts, add comments, and ranks posts by vote.
-                  The app uses Redux and Redux Thunk to manage state, handle prop-drilling, and dispatch actions asynchronously.
+                  Microblog is a full-stack blogging application that allows users to create blog posts, add comments,
+                  and rank posts by votes.The app uses Redux and Redux Thunk to manage state and dispatch actions asynchronously.
+                  Separate data structures are used for blog titles and posts to optimize homepage load speed.
                 </p>
                 <p>
-                  The frontend is built with React and styled with Bootstrap, and the backend runs on
-                  Node/Express and uses a PostgreSQL database.
+                  Utilized: React, React Hooks, Redux, Redux Thunk, Bootstrap, Node, Express, and PostgreSQL.
                 </p>
                 <p>
                   Live demo: <a href="https://microblog-react-app.herokuapp.com/"
@@ -200,14 +202,13 @@
               </div>
               <div class="modal-body">
                 <p>
-                  Warbler is a mock twitter clone built completely as a backend application. Users can 
-                  sign up/login, follow users, have followers, and create/like messages (tweets). 
-                  Bcrypt authentication is used to manage user login and Flask sessions store 
-                  current user data.
+                  Warbler is a mock twitter clone built entirely as a backend application. Users can sign up/login, follow users,
+                  have followers, and create/like messages (tweets). Bcrypt authentication is used to manage user login and Flask
+                  sessions store current user data to persist state across requests. Tests were written for views and models using
+                  the Python unittest module.
                 </p>
                 <p>
-                  The app is built with Flask and Jinja and uses a PostgreSQL database. Tests were written  
-                  for views and models using the Python unittest module.
+                  Utilized: Python, Flask, SQLAlchemy, WTForms, Bcrypt, Unittest, Jinja, Bootstrap, and PostgreSQL.
                 </p>
                 <p>
                   Live demo: <a href="https://warbler-flask-app.herokuapp.com/"
