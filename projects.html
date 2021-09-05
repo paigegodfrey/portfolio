@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Paige Godfrey</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand">
+      <a class="navbar-brand mx-1" href="index">PAIGE</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-1"><a class="nav-link" href="projects">Projects</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="about">About</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End Navigation -->
+
+  <!-- Projects -->
+  <div class="p-2 pt-4 bg-light" style="min-height: 90vh;">
+    <div class="col-md-9 mx-auto my-5">
+
+      <div class="mb-4">
+        <h1 class="font-weight-normal">Projects</h1>
+        <hr>
+        <div class="projects row">
+
+          <!-- Jobly -->
+          <div class="col-lg-6">
+            <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3" data-toggle="modal" data-target="#joblyModal">
+              <img class="card-img-top" src="jobly.jpg" alt="jobly-screenshot">
+              <div class="card-body">
+                <h3 class="card-title">Jobly</h3>
+                <a href="https://github.com/paigegodfrey/jobly" target="_blank"><i
+                    class="fab fa-github fa-lg mx-1"></i></a>
+                <p class="card-text">React • Node/Express • PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jobly Modal -->
+          <div class="modal fade" id="joblyModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title">Jobly</h2>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Jobly is a full-stack mock job-search application in which users can login, view companies/jobs,
+                    and apply to open positions. The backend features a RESTful API with token-based authentication
+                    and the frontend uses React Context to manage global state. Integration tests are written with Jest
+                    and SuperTest. View <a href="https://github.com/paigegodfrey/jobly" target="_blank">GitHub
+                      repository</a>.
+                  </p>
+                  <p>
+                    Utilizes: React, React Context, Node, Express, JSON Web Tokens, Bcrypt, Jest, SuperTest, PostgreSQL.
+                  </p>
+                  <p>
+                    Live demo: <a href="http://jobly-build.surge.sh/" target="_blank">http://jobly-build.surge.sh</a>
+                  </p>
+                  <p>Create a new account or login using the following information:</p>
+                  <ul>
+                    <li>Username: test</li>
+                    <li>Password: password</li>
+                  </ul>
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+                      <source src="jobly-record.mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Jobly -->
+
+          <!-- Microblog -->
+          <div class="col-lg-6">
+            <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3" data-toggle="modal" data-target="#microblogModal">
+              <img class="card-img-top" src="microblog.jpg" alt="microblog-screenshot">
+              <div class="card-body">
+                <h3 class="card-title">Microblog</h3>
+                <a href="https://github.com/paigegodfrey/microblog" target="_blank"><i
+                    class="fab fa-github fa-lg mx-1"></i></a>
+                <p class="card-text">React • Redux • Node/Express</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Microblog Modal -->
+          <div class="modal fade" id="microblogModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Microblog</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Microblog is a full-stack blogging application that allows users to create blog posts, add comments,
+                    and rank posts by votes. Redux Thunk is used to execute asynchronous API calls, with blog titles and
+                    posts stored in separate data structures to optimize loading. View
+                    <a href="https://github.com/paigegodfrey/microblog" target="_blank">GitHub repository</a>.
+                  </p>
+                  <p>
+                    Utilizes: React, React Hooks, Redux, Redux Thunk, Bootstrap, Node, Express, and PostgreSQL.
+                  </p>
+                  <p>
+                    Live demo: <a href="http://microblog.surge.sh/" target="_blank">http://microblog.surge.sh</a>
+                  </p>
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+                      <source src="microblog-record.mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Microblog -->
+
+          <!-- Flixster -->
+          <div class="col-lg-6">
+            <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3" data-toggle="modal" data-target="#flixsterModal">
+              <img class="card-img-top" src="flixster.jpg" alt="flixster-screenshot">
+              <div class="card-body">
+                <h3 class="card-title">Flixster</h3>
+                <a href="https://github.com/paigegodfrey/flixster" target="_blank"><i
+                    class="fab fa-github fa-lg mx-1"></i></a>
+                <p class="card-text">Vanilla JavaScript • HTML • CSS</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flixster Modal -->
+          <div class="modal fade" id="flixsterModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Flixster</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Microblog is a full-stack blogging application that allows users to create blog posts, add comments,
+                    and rank posts by votes. Redux Thunk is used to execute asynchronous API calls, with blog titles and
+                    posts stored in separate data structures to optimize loading. View
+                    <a href="https://github.com/paigegodfrey/microblog" target="_blank">GitHub repository</a>.
+                  </p>
+                  <p>
+                    Utilizes: React, React Hooks, Redux, Redux Thunk, Bootstrap, Node, Express, and PostgreSQL.
+                  </p>
+                  <p>
+                    Live demo: <a href="http://microblog.surge.sh/" target="_blank">http://microblog.surge.sh</a>
+                  </p>
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+                      <source src="microblog-record.mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Microblog -->
+
+          <!-- Warbler -->
+          <div class="col-lg-6">
+            <div class="card mx-auto mb-5 mb-lg-0 mb-lg-3" data-toggle="modal" data-target="#warblerModal">
+              <img class="card-img-top" src="warbler.jpg" alt="warbler-screenshot">
+              <div class="card-body">
+                <h3 class="card-title">Warbler</h3>
+                <a href="https://github.com/paigegodfrey/warbler" target="_blank"><i
+                    class="fab fa-github fa-lg mx-1"></i></a>
+                <p class="card-text">Flask • Jinja • PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warbler Modal -->
+          <div class="modal fade" id="warblerModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Warbler</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Warbler is a mock twitter clone built entirely as a backend application. Users can sign up/login,
+                    follow users, have followers, and create/like messages (tweets). Bcrypt authentication is used to
+                    manage user login and Flask sessions store current user data to persist state across requests. Tests
+                    are written for views and models using Python Unittest. View
+                    <a href="https://github.com/paigegodfrey/warbler" target="_blank">GitHub repository</a>.
+                  </p>
+                  <p>
+                    Utilizes: Python, Flask, SQLAlchemy, WTForms, Bcrypt, Unittest, Jinja, Bootstrap, and PostgreSQL.
+                  </p>
+                  <p>
+                    Live demo: <a href="https://warbler-flask-app.herokuapp.com/"
+                      target="_blank">https://warbler-flask-app.herokuapp.com</a>
+                  </p>
+                  <p>Create a new account or login using the following information:</p>
+                  <ul>
+                    <li>Username: user</li>
+                    <li>Password: password</li>
+                  </ul>
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <video class="embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+                      <source src="warbler-record.mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Warbler -->
+
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
